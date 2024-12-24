@@ -1,1 +1,163 @@
-site_name: My Docs
+site_name: 'Dev Sanghani'
+site_description: 'My personal Website!'
+site_author: 'Dev Sanghani'
+site_url: 'https://devsanghani.me'
+
+copyright: |
+  &copy; Dev Sanghani
+
+
+repo_name: devanshusanghani/devanshusanghani.github.io
+repo_url: https://github.com/devanshusanghani/devanshusanghani.github.io
+
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  favicon: 'assets/img/favicons/logo.svg'
+  logo: 'assets/img/favicons/logo.svg'
+  icon:
+    repo: simple/github
+    admonition:
+      note: octicons/pencil-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/comment-16
+    tag:
+      mc: material/cube
+      spigot: fontawesome/solid/faucet-drip
+      paypal: fontawesome/brands/paypal
+      java: fontawesome/brands/java
+      discord: fontawesome/brands/discord
+      mastodon: fontawesome/brands/mastodon
+      twitter: fontawesome/brands/twitter
+  palette:
+    scheme: 'slate'
+    primary: 'custom'
+    accent: 'blue'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - content.code.annotate
+
+extra_css:
+- assets/css/extra.css
+
+extra_javascript:
+- assets/js/timeago.min.js
+- assets/js/timeago_mkdocs_material.js
+
+watch:
+  - theme
+
+extra:
+  social:
+    - icon: 'simple/Linkedin'
+      link: 'https://www.linkedin.com/in/devanshusanghani/'
+    - icon: 'simple/github'
+      link: 'https://github.com/devanshusanghani'
+    - icon: 'simple/mastodon'
+      link: 'https://blobfox.coffee/@typing...'
+    - icon: 'simple/bluesky'
+      link: 'https://bsky.app/profile/devsanghani.me'
+    
+  tags:
+    Minecraft: mc
+    SpigotMC: spigot
+    PayPal: paypal
+    Java: java
+    Discord: discord
+    Mastodon: mastodon
+    Twitter: twitter
+  mastodon:
+    host: swiss.social
+    user: devsanghani
+
+nav:
+  - Main Page: index.md
+  - Blog:
+    - blog/index.md
+    - Tags: blog/tags.md
+
+not_in_nav: |
+  luckperms.md  
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      authors: true
+      post_date_format: 'dd. MMM yyyy'
+      post_url_date_format: yyyy
+      post_url_format: '{date}/{file}'
+      archive: true
+      archive_url_format: '{date}'
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+      draft_if_future_date: true
+  - rss:
+      match_path: blog/posts/*
+      categories:
+        - categories
+        - tags
+      comments_path: '#__comments'
+  - tags:
+      tags_file: blog/tags.md
+  - git-revision-date-localized:
+      type: custom
+      timezone: Europe/Zurich
+      locale: en
+      custom_format: '%d. %B %Y'
+      exclude:
+        - blog/index.md
+        - blog/posts/index.md
+        - blog/posts/tags.md
+  - glightbox
+
+markdown_extensions:
+  - markdown.extensions.meta:
+  - markdown.extensions.attr_list:
+  - markdown.extensions.footnotes:
+      PLACE_MARKER: "<!-- Footnotes -->"
+  - markdown.extensions.toc:
+      permalink: true
+  - markdown.extensions.md_in_html:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.magiclink:
+  - pymdownx.smartsymbols:
+  - pymdownx.snippets:
+      base_path: 'theme/snippets'
+  - pymdownx.superfences:
+  - pymdownx.tilde:
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.tab:
+      alternate_style: true
+
+hooks:
+  - theme/hooks/footnotes.py
