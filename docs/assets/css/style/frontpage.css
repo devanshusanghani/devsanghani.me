@@ -1,5 +1,6 @@
 :root {
     --md-button-color--discord: #5865F2;
+    --md-button-color--linkedin: #4b58e6;
     --md-button-color--mastodon: #6364FF;
 }
 
@@ -39,6 +40,16 @@
 .md-typeset .md-button--discord:hover {
     background-color: var(--md-button-color--discord);
     border-color: var(--md-button-color--discord);
+}
+
+.md-typeset .md-button--linkedin {
+    border-color: var(--md-button-color--linkedin);
+    color: var(--md-button-color--linkedin);
+}
+
+.md-typeset .md-button--linkedin:hover {
+    background-color: var(--md-button-color--linkedin);
+    border-color: var(--md-button-color--linkedin);
 }
 
 .md-typeset .md-button--mastodon {

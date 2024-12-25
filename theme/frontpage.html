@@ -1,4 +1,5 @@
 {% extends "main.html" %}
+
 {% block tabs %}
   {{ super() }}
   <style>
@@ -21,28 +22,28 @@
         display: none;
       }
     }
-    .md-tabs {
+    /* .md-tabs {
       display: none;
-    }
+    } */
   </style>
   <section class="mdx-container">
     <div class="md-grid md-typeset">
       <header class="mdx-hero">
-        <img src="{{ config.site_url | url }}/assets/img/favicons/Profile.jpg" alt="" width="300" height="200" draggable="false">
+        <img src="{{ config.site_url | url }}/assets/img/favicons/Profile.jpg" alt="" width="200" height="200" draggable="false">
         <p class="mdx-description">
             Personal Website of Dev Sanghani
         </p>
           <a href="https://www.linkedin.com/in/devanshusanghani/" target="_blank" rel="noopener" class="md-button md-button--linkedin">
             <span class="twemoji">
-                {% include ".icons/simple/github.svg" %}
-            </span>
-            Github
-          </a>
-          <a href="https://www.linkedin.com/in/devanshusanghani/" target="_blank" rel="noopener" class="md-button md-button--linkedin"></a>
-            <span class="twemoji">
                 {% include ".icons/simple/linkedin.svg" %}
             </span>
             Linkedin
+          </a>
+          <a href="https://github.com/devanshusanghani/" target="_blank" rel="noopener" class="md-button md-button--github">
+            <span class="twemoji">
+                {% include ".icons/simple/github.svg" %}
+            </span>
+            Github
           </a>
           <a href="https://blobfox.coffee/@typing..." target="_blank" rel="me" class="md-button md-button--mastodon">
             <span class="twemoji">

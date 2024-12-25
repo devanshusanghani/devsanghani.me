@@ -38,6 +38,7 @@ theme:
       discord: fontawesome/brands/discord
       mastodon: fontawesome/brands/mastodon
       twitter: fontawesome/brands/twitter
+      linkedin: fontawesome/brands/linkedin
   palette:
     scheme: 'slate'
     primary: 'custom'
@@ -61,7 +62,7 @@ watch:
 
 extra:
   social:
-    - icon: 'simple/Linkedin'
+    - icon: 'simple/linkedin'
       link: 'https://www.linkedin.com/in/devanshusanghani/'
     - icon: 'simple/github'
       link: 'https://github.com/devanshusanghani'
@@ -78,12 +79,14 @@ extra:
     Discord: discord
     Mastodon: mastodon
     Twitter: twitter
+    Linkedin: linkedin
   mastodon:
-    host: swiss.social
-    user: devsanghani
+    host: blobfox.coffee
+    user: typing...
 
 nav:
   - Main Page: index.md
+  - Work Experience: work-experience.md
   - Blog:
     - blog/index.md
     - Tags: blog/tags.md
@@ -114,7 +117,7 @@ plugins:
       tags_file: blog/tags.md
   - git-revision-date-localized:
       type: custom
-      timezone: Europe/Zurich
+      timezone: America/Chicago
       locale: en
       custom_format: '%d. %B %Y'
       exclude:
