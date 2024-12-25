@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="timeline-container">
+  {{ page.content }}
+</div>
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ 'assets/style/work-experience.css' | url }}">
+{% endblock %} 
