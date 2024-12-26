@@ -1,12 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="timeline-container">
-  {{ page.content }}
+<div class="md-content">
+  <div class="timeline-container">
+    <div class="timeline">
+      {% for experience in get_work_experience().work_experience %}
+        {% set side = "left" if loop.index0 % 2 == 0 else "right" %}
+        
+        {% if "roles" in experience %}
+          {# Company with multiple roles #}
+          {% for role in experience.roles %}
+            <div class="timeline-item {{ side }}">
+              <div class="timeline-date">{{ role.start_date }} - {{ role.end_date }}</div>
+              <div class="timeline-content">
+                {% if loop.first %}
+                  <h3>{{ experience.company }}</h3>
+                {% endif %}
+                <h4>{{ role.title }}</h4>
+                <ul>
+                  {% for responsibility in role.responsibilities %}
+                    <li>{{ responsibility }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          {# Single role company #}
+          <div class="timeline-item {{ side }}">
+            <div class="timeline-date">{{ experience.start_date }} - {{ experience.end_date }}</div>
+            <div class="timeline-content">
+              <h3>{{ experience.company }}</h3>
+              <h4>{{ experience.role }}</h4>
+              <ul>
+                {% for responsibility in experience.responsibilities %}
+                  <li>{{ responsibility }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block styles %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ 'assets/style/work-experience.css' | url }}">
-{% endblock %} 
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/work-experience.css' | url }}">
+{% endblock %}

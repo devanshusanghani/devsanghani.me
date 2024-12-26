@@ -1,7 +1,7 @@
 # Blog
-Welcome to my ~~Ted Talk~~ Blog!  
+Welcome to my Blog!  
 
-This site is home of countless blog posts I made throughout the years.  
+This site is for project documentation or any general documentation.
 You can find a list of them below.
 
 ----

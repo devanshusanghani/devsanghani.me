@@ -96,6 +96,7 @@ not_in_nav: |
 
 plugins:
   - search
+  - macros
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -125,6 +126,7 @@ plugins:
         - blog/posts/index.md
         - blog/posts/tags.md
   - glightbox
+  - mkdocstrings
 
 markdown_extensions:
   - markdown.extensions.meta:
@@ -163,4 +165,6 @@ markdown_extensions:
       alternate_style: true
 
 hooks:
+  - theme/hooks/experience.py
   - theme/hooks/footnotes.py
+  
