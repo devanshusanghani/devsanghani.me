@@ -1,0 +1,25 @@
+:root {
+    --md-primary-fg-color: #353434;
+}
+
+@media screen {
+    [data-md-color-scheme="slate"] {
+        --md-typeset-a-color: #526cfe;
+    }
+}
+
+div.footnote > hr {
+    display: none;
+}
+
+.octicons-true {
+    color: #3FB950;
+}
+
+.octicons-false {
+    color: #F85149;
+}
+
+.md-typeset .md-button {
+    color: var(--md-typeset-a-color);
+}
