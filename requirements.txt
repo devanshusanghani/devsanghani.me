@@ -1,5 +1,9 @@
 mkdocs
+mkdocstrings-python
 mkdocs-macros-plugin
+mkdocs-glightbox
+mkdocs-macros-plugin
+mkdocs-git-revision-date-localized-plugin
 mkdocs-charts-plugin
 mkdocs-get-deps
 mkdocs-material
