@@ -26,5 +26,4 @@ The contents of my website (Everything found under the main `devsanghani.me` dom
     
     [:octicons-chevron-right-16: Go to Page](blog/index.md)
 
-
 </div>
