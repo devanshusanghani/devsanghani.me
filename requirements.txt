@@ -1,4 +1,5 @@
 mkdocs
+mkdocs-macros-plugin
 mkdocs-charts-plugin
 mkdocs-get-deps
 mkdocs-material
@@ -8,3 +9,4 @@ mkdocs-rss-plugin
 markdown
 pymdown-extensions
 python-dateutil
+regex
