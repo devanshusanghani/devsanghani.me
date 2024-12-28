@@ -67,7 +67,7 @@ extra:
     - icon: 'simple/github'
       link: 'https://github.com/devanshusanghani'
     - icon: 'simple/mastodon'
-      link: 'https://blobfox.coffee/@typing...'
+      link: 'https://hometech.social/@typing'
     - icon: 'simple/bluesky'
       link: 'https://bsky.app/profile/devsanghani.me'
     
@@ -90,6 +90,8 @@ nav:
   - Blog:
     - blog/index.md
     - Tags: blog/tags.md
+  - Cookbook: cookbook.md
+  - Music: music.md
 
 not_in_nav: |
   luckperms.md  
