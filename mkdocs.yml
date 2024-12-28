@@ -167,6 +167,6 @@ markdown_extensions:
       alternate_style: true
 
 hooks:
-  - theme/hooks/experience.py
+  - theme/hooks/work-experience.py
   - theme/hooks/footnotes.py
   
