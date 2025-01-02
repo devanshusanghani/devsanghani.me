@@ -123,6 +123,7 @@ plugins:
       timezone: America/Chicago
       locale: en
       custom_format: '%d. %B %Y'
+      fallback_to_build_date: true
       exclude:
         - blog/index.md
         - blog/posts/index.md
