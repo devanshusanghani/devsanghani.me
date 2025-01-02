@@ -81,8 +81,8 @@ extra:
     Twitter: twitter
     Linkedin: linkedin
   mastodon:
-    host: blobfox.coffee
-    user: typing...
+    host: hometech.social
+    user: '@typing'
 
 nav:
   - Main Page: index.md
