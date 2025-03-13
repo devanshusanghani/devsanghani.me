@@ -106,26 +106,86 @@ dependencies = [
     { name = "mkdocs" },
     { name = "mkdocs-charts-plugin" },
     { name = "mkdocs-get-deps" },
+    { name = "mkdocs-git-revision-date-localized-plugin" },
+    { name = "mkdocs-glightbox" },
+    { name = "mkdocs-macros-plugin" },
     { name = "mkdocs-material" },
     { name = "mkdocs-material-extensions" },
+    { name = "mkdocs-open-in-new-tab" },
     { name = "mkdocs-redirects" },
     { name = "mkdocs-rss-plugin" },
+    { name = "mkdocstrings-python" },
     { name = "pymdown-extensions" },
     { name = "python-dateutil" },
+    { name = "regex" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "babel" },
+    { name = "certifi" },
+    { name = "charset-normalizer" },
+    { name = "click" },
+    { name = "colorama" },
+    { name = "ghp-import" },
+    { name = "idna" },
+    { name = "jinja2" },
+    { name = "markupsafe" },
+    { name = "mergedeep" },
+    { name = "packaging" },
+    { name = "paginate" },
+    { name = "pathspec" },
+    { name = "platformdirs" },
+    { name = "pygments" },
+    { name = "pyyaml" },
+    { name = "pyyaml-env-tag" },
+    { name = "regex" },
+    { name = "requests" },
+    { name = "six" },
+    { name = "urllib3" },
+    { name = "watchdog" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "markdown", specifier = ">=3.7" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-charts-plugin", specifier = ">=0.0.12" },
-    { name = "mkdocs-get-deps", specifier = ">=0.2.0" },
-    { name = "mkdocs-material", specifier = ">=9.5.49" },
-    { name = "mkdocs-material-extensions", specifier = ">=1.3.1" },
-    { name = "mkdocs-redirects", specifier = ">=1.2.2" },
-    { name = "mkdocs-rss-plugin", specifier = ">=1.17.1" },
-    { name = "pymdown-extensions", specifier = ">=10.13" },
-    { name = "python-dateutil", specifier = ">=2.9.0.post0" },
+    { name = "babel", marker = "extra == 'dev'", specifier = "==2.16.0" },
+    { name = "certifi", marker = "extra == 'dev'", specifier = "==2024.12.14" },
+    { name = "charset-normalizer", marker = "extra == 'dev'", specifier = "==3.4.0" },
+    { name = "click", marker = "extra == 'dev'", specifier = "==8.1.8" },
+    { name = "colorama", marker = "extra == 'dev'", specifier = "==0.4.6" },
+    { name = "ghp-import", marker = "extra == 'dev'", specifier = "==2.1.0" },
+    { name = "idna", marker = "extra == 'dev'", specifier = "==3.10" },
+    { name = "jinja2", marker = "extra == 'dev'", specifier = "==3.1.6" },
+    { name = "markdown" },
+    { name = "markupsafe", marker = "extra == 'dev'", specifier = "==3.0.2" },
+    { name = "mergedeep", marker = "extra == 'dev'", specifier = "==1.3.4" },
+    { name = "mkdocs" },
+    { name = "mkdocs-charts-plugin" },
+    { name = "mkdocs-get-deps" },
+    { name = "mkdocs-git-revision-date-localized-plugin" },
+    { name = "mkdocs-glightbox" },
+    { name = "mkdocs-macros-plugin" },
+    { name = "mkdocs-material" },
+    { name = "mkdocs-material-extensions" },
+    { name = "mkdocs-open-in-new-tab" },
+    { name = "mkdocs-redirects" },
+    { name = "mkdocs-rss-plugin" },
+    { name = "mkdocstrings-python" },
+    { name = "packaging", marker = "extra == 'dev'", specifier = "==24.2" },
+    { name = "paginate", marker = "extra == 'dev'", specifier = "==0.5.7" },
+    { name = "pathspec", marker = "extra == 'dev'", specifier = "==0.12.1" },
+    { name = "platformdirs", marker = "extra == 'dev'", specifier = "==4.3.6" },
+    { name = "pygments", marker = "extra == 'dev'", specifier = "==2.18.0" },
+    { name = "pymdown-extensions" },
+    { name = "python-dateutil" },
+    { name = "pyyaml", marker = "extra == 'dev'", specifier = "==6.0.2" },
+    { name = "pyyaml-env-tag", marker = "extra == 'dev'", specifier = "==0.1" },
+    { name = "regex" },
+    { name = "regex", marker = "extra == 'dev'", specifier = "==2024.11.6" },
+    { name = "requests", marker = "extra == 'dev'", specifier = "==2.32.3" },
+    { name = "six", marker = "extra == 'dev'", specifier = "==1.17.0" },
+    { name = "urllib3", marker = "extra == 'dev'", specifier = "==2.3.0" },
+    { name = "watchdog", marker = "extra == 'dev'", specifier = "==6.0.0" },
 ]
 
 [[package]]
@@ -163,14 +223,35 @@ wheels = [
 
 [[package]]
 name = "gitpython"
-version = "3.1.43"
+version = "3.1.44"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "gitdb" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b6/a1/106fd9fa2dd989b6fb36e5893961f82992cf676381707253e0bf93eb1662/GitPython-3.1.43.tar.gz", hash = "sha256:35f314a9f878467f5453cc1fee295c3e18e52f1b99f10f6cf5b1682e968a9e7c", size = 214149 }
+sdist = { url = "https://files.pythonhosted.org/packages/c0/89/37df0b71473153574a5cdef8f242de422a0f5d26d7a9e231e6f169b4ad14/gitpython-3.1.44.tar.gz", hash = "sha256:c87e30b26253bf5418b01b0660f818967f3c503193838337fe5e573331249269", size = 214196 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e9/bd/cc3a402a6439c15c3d4294333e13042b915bbeab54edc457c723931fed3f/GitPython-3.1.43-py3-none-any.whl", hash = "sha256:eec7ec56b92aad751f9912a73404bc02ba212a23adb2c7098ee668417051a1ff", size = 207337 },
+    { url = "https://files.pythonhosted.org/packages/1d/9a/4114a9057db2f1462d5c8f8390ab7383925fe1ac012eaa42402ad65c2963/GitPython-3.1.44-py3-none-any.whl", hash = "sha256:9e0e10cda9bed1ee64bc9a6de50e7e38a9c9943241cd7f585f6df3ed28011110", size = 207599 },
+]
+
+[[package]]
+name = "griffe"
+version = "1.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a0/1a/d467b93f5e0ea4edf3c1caef44cfdd53a4a498cb3a6bb722df4dd0fdd66a/griffe-1.6.0.tar.gz", hash = "sha256:eb5758088b9c73ad61c7ac014f3cdfb4c57b5c2fcbfca69996584b702aefa354", size = 391819 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/02/5a22bc98d0aebb68c15ba70d2da1c84a5ef56048d79634e5f96cd2ba96e9/griffe-1.6.0-py3-none-any.whl", hash = "sha256:9f1dfe035d4715a244ed2050dfbceb05b1f470809ed4f6bb10ece5a7302f8dd1", size = 128470 },
+]
+
+[[package]]
+name = "hjson"
+version = "3.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/e5/0b56d723a76ca67abadbf7fb71609fb0ea7e6926e94fcca6c65a85b36a0e/hjson-3.1.0.tar.gz", hash = "sha256:55af475a27cf83a7969c808399d7bccdec8fb836a07ddbd574587593b9cdcf75", size = 40541 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1f/7f/13cd798d180af4bf4c0ceddeefba2b864a63c71645abc0308b768d67bb81/hjson-3.1.0-py3-none-any.whl", hash = "sha256:65713cdcf13214fb554eb8b4ef803419733f4f5e551047c9b711098ab7186b89", size = 54018 },
 ]
 
 [[package]]
@@ -184,14 +265,14 @@ wheels = [
 
 [[package]]
 name = "jinja2"
-version = "3.1.5"
+version = "3.1.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/92/b3130cbbf5591acf9ade8708c365f3238046ac7cb8ccba6e81abccb0ccff/jinja2-3.1.5.tar.gz", hash = "sha256:8fefff8dc3034e27bb80d67c671eb8a9bc424c0ef4c0826edbff304cceff43bb", size = 244674 }
+sdist = { url = "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz", hash = "sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d", size = 245115 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl", hash = "sha256:aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb", size = 134596 },
+    { url = "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67", size = 134899 },
 ]
 
 [[package]]
@@ -275,6 +356,20 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-autorefs"
+version = "1.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown" },
+    { name = "markupsafe" },
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c2/44/140469d87379c02f1e1870315f3143718036a983dd0416650827b8883192/mkdocs_autorefs-1.4.1.tar.gz", hash = "sha256:4b5b6235a4becb2b10425c2fa191737e415b37aa3418919db33e5d774c9db079", size = 4131355 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f8/29/1125f7b11db63e8e32bcfa0752a4eea30abff3ebd0796f808e14571ddaa2/mkdocs_autorefs-1.4.1-py3-none-any.whl", hash = "sha256:9793c5ac06a6ebbe52ec0f8439256e66187badf4b5334b5fde0b128ec134df4f", size = 5782047 },
+]
+
+[[package]]
 name = "mkdocs-charts-plugin"
 version = "0.0.12"
 source = { registry = "https://pypi.org/simple" }
@@ -299,6 +394,50 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/98/f5/ed29cd50067784976f25ed0ed6fcd3c2ce9eb90650aa3b2796ddf7b6870b/mkdocs_get_deps-0.2.0.tar.gz", hash = "sha256:162b3d129c7fad9b19abfdcb9c1458a651628e4b1dea628ac68790fb3061c60c", size = 10239 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9f/d4/029f984e8d3f3b6b726bd33cafc473b75e9e44c0f7e80a5b29abc466bdea/mkdocs_get_deps-0.2.0-py3-none-any.whl", hash = "sha256:2bf11d0b133e77a0dd036abeeb06dec8775e46efa526dc70667d8863eefc6134", size = 9521 },
+]
+
+[[package]]
+name = "mkdocs-git-revision-date-localized-plugin"
+version = "1.4.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "babel" },
+    { name = "gitpython" },
+    { name = "mkdocs" },
+    { name = "pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/dc/e8/6b60a1ee45701473ecdb6ab4d936210aebec2266e173543d8fb47f104d8e/mkdocs_git_revision_date_localized_plugin-1.4.4.tar.gz", hash = "sha256:cc805d020e0eb2df9d52cfad195f89237a8c6a47ac5ca9e5a5ba95aee06f2140", size = 449521 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ed/82/71b55d6dd6349b7d38ace7b3e29ffdcf1c7f6f6da692fe7f44acb81abe65/mkdocs_git_revision_date_localized_plugin-1.4.4-py3-none-any.whl", hash = "sha256:c1c4fd622e44eb81b9b0b0402f0367fb28f597828b1463c55452df691ceb54ca", size = 25247 },
+]
+
+[[package]]
+name = "mkdocs-glightbox"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/86/5a/0bc456397ba0acc684b5b1daa4ca232ed717938fd37198251d8bcc4053bf/mkdocs-glightbox-0.4.0.tar.gz", hash = "sha256:392b34207bf95991071a16d5f8916d1d2f2cd5d5bb59ae2997485ccd778c70d9", size = 32010 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/72/b0c2128bb569c732c11ae8e49a777089e77d83c05946062caa19b841e6fb/mkdocs_glightbox-0.4.0-py3-none-any.whl", hash = "sha256:e0107beee75d3eb7380ac06ea2d6eac94c999eaa49f8c3cbab0e7be2ac006ccf", size = 31154 },
+]
+
+[[package]]
+name = "mkdocs-macros-plugin"
+version = "1.3.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "hjson" },
+    { name = "jinja2" },
+    { name = "mkdocs" },
+    { name = "packaging" },
+    { name = "pathspec" },
+    { name = "python-dateutil" },
+    { name = "pyyaml" },
+    { name = "super-collections" },
+    { name = "termcolor" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/65/61a746c56788867221aebf07fe4b6b4c08ac99cf341fd51d728c89d1456e/mkdocs_macros_plugin-1.3.7.tar.gz", hash = "sha256:17c7fd1a49b94defcdb502fd453d17a1e730f8836523379d21292eb2be4cb523", size = 33466 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/55/cf/f03331298ee50a4da6fb72ccec79078041158c1f8b5fc24835c1be42232e/mkdocs_macros_plugin-1.3.7-py3-none-any.whl", hash = "sha256:02432033a5b77fb247d6ec7924e72fc4ceec264165b1644ab8d0dc159c22ce59", size = 37799 },
 ]
 
 [[package]]
@@ -333,6 +472,18 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-open-in-new-tab"
+version = "1.0.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0a/0e/f72a506a21bdb27b807124e00c688226848a388d1fd3980b80ae3cc27203/mkdocs_open_in_new_tab-1.0.8.tar.gz", hash = "sha256:3e0dad08cc9938b0b13097be8e0aa435919de1eeb2d1a648e66b5dee8d57e048", size = 5791 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/94/44f3c868495481c868d08eea065c82803f1affd8553d3383b782f497613c/mkdocs_open_in_new_tab-1.0.8-py3-none-any.whl", hash = "sha256:051d767a4467b12d89827e1fea0ec660b05b027c726317fe4fceee5456e36ad2", size = 7717 },
+]
+
+[[package]]
 name = "mkdocs-redirects"
 version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
@@ -358,6 +509,37 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ed/d9/72a2087834a679874c52d9c292c79cb7a6b3a112f00777db6a275645faa5/mkdocs_rss_plugin-1.17.1.tar.gz", hash = "sha256:9371d30afb0eda7288c946a89b419aa7a0b8e212d2219584c2dbd23ece93a991", size = 33950 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/53/387e9ff4e3857cac1a1a1f4d707ca1673c293174fd134de0c25513fb0c49/mkdocs_rss_plugin-1.17.1-py2.py3-none-any.whl", hash = "sha256:ff81f0ece33befd5a0152c196132e15eb93b4b9f7f53644c6d3db8e9a529e186", size = 29970 },
+]
+
+[[package]]
+name = "mkdocstrings"
+version = "0.29.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+    { name = "markdown" },
+    { name = "markupsafe" },
+    { name = "mkdocs" },
+    { name = "mkdocs-autorefs" },
+    { name = "pymdown-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8e/4d/a9484dc5d926295bdf308f1f6c4f07fcc99735b970591edc414d401fcc91/mkdocstrings-0.29.0.tar.gz", hash = "sha256:3657be1384543ce0ee82112c3e521bbf48e41303aa0c229b9ffcccba057d922e", size = 1212185 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/15/47/eb876dfd84e48f31ff60897d161b309cf6a04ca270155b0662aae562b3fb/mkdocstrings-0.29.0-py3-none-any.whl", hash = "sha256:8ea98358d2006f60befa940fdebbbc88a26b37ecbcded10be726ba359284f73d", size = 1630824 },
+]
+
+[[package]]
+name = "mkdocstrings-python"
+version = "1.16.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "griffe" },
+    { name = "mkdocs-autorefs" },
+    { name = "mkdocstrings" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a1/81/3575e451682e0ed3c39e9b57d1fd30590cd28a965131ead14bf2efe34a1b/mkdocstrings_python-1.16.5.tar.gz", hash = "sha256:706b28dd0f59249a7c22cc5d517c9521e06c030b57e2a5478e1928a58f900abb", size = 426979 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5c/27/42f8a520111a4dde9722f08ca75d761b68722158b2232b63def061de12a8/mkdocstrings_python-1.16.5-py3-none-any.whl", hash = "sha256:0899a12e356eab8e83720c63e15d0ff51cd96603216c837618de346e086b39ba", size = 451550 },
 ]
 
 [[package]]
@@ -458,6 +640,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892 },
+]
+
+[[package]]
+name = "pytz"
+version = "2025.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5f/57/df1c9157c8d5a05117e455d66fd7cf6dbc46974f832b1058ed4856785d8a/pytz-2025.1.tar.gz", hash = "sha256:c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e", size = 319617 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/eb/38/ac33370d784287baa1c3d538978b5e2ea064d4c1b93ffbd12826c190dd10/pytz-2025.1-py2.py3-none-any.whl", hash = "sha256:89dd22dca55b46eac6eda23b2d72721bf1bdfef212645d81513ef5d03038de57", size = 507930 },
 ]
 
 [[package]]
@@ -567,6 +758,27 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/88/04/b5bf6d21dc4041000ccba7eb17dd3055feb237e7ffc2c20d3fae3af62baa/smmap-5.0.1.tar.gz", hash = "sha256:dceeb6c0028fdb6734471eb07c0cd2aae706ccaecab45965ee83f11c8d3b1f62", size = 22291 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl", hash = "sha256:e6d8668fa5f93e706934a62d7b4db19c8d9eb8cf2adbb75ef1b675aa332b69da", size = 24282 },
+]
+
+[[package]]
+name = "super-collections"
+version = "0.5.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "hjson" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b8/05/d1b50919a0d206d77255217d96dea9ab34bd1eb965a21559380c48f9517e/super_collections-0.5.3.tar.gz", hash = "sha256:94c1ec96c0a0d5e8e7d389ed8cde6882ac246940507c5e6b86e91945c2968d46", size = 10178 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/6d/58de58c521e7fb79bceb4da90d55250070bb4adfa3c870b82519a561c79d/super_collections-0.5.3-py3-none-any.whl", hash = "sha256:907d35b25dc4070910e8254bf2f5c928348af1cf8a1f1e8259e06c666e902cff", size = 8436 },
+]
+
+[[package]]
+name = "termcolor"
+version = "2.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/37/72/88311445fd44c455c7d553e61f95412cf89054308a1aa2434ab835075fc5/termcolor-2.5.0.tar.gz", hash = "sha256:998d8d27da6d48442e8e1f016119076b690d962507531df4890fcd2db2ef8a6f", size = 13057 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl", hash = "sha256:37b17b5fc1e604945c2642c872a3764b5d547a48009871aea3edd3afa180afb8", size = 7755 },
 ]
 
 [[package]]
