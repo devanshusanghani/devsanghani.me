@@ -70,6 +70,8 @@ extra:
       link: 'https://hometech.social/@typing'
     - icon: 'fontawesome/brands/bluesky'
       link: 'https://bsky.app/profile/devsanghani.me'
+    - icon: 'fontawesome/brands/x-twitter'
+      link: 'https://x.com/Dev_Sanghani'
     
   tags:
     Minecraft: mc
@@ -83,6 +85,19 @@ extra:
   mastodon:
     host: hometech.social
     user: '@typing'
+  share:
+    - link: 'https://mastodonshare.com/?url={url}&text={title}'
+      icon: 'fontawesome/brands/mastodon'
+      title: 'Toot Post on Mastodon!'
+      class: 'md-button__social--mastodon'
+    - link: 'https://bsky.app/intent/compose?text={title}%0A{url}'
+      icon: 'fontawesome/brands/bluesky'
+      title: 'Share Post on Bluesky!'
+      class: 'md-button__social--bluesky'
+    - link: 'https://x.com/intent/tweet?url={url}&text={title}'
+      icon: 'fontawesome/brands/x-twitter'
+      title: 'Share Post on X!'
+      class: 'md-button__social--x-twitter'
 
 nav:
   - Main Page: index.md

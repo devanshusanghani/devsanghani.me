@@ -1,0 +1,63 @@
+:root {
+    --md-button__mastodon: #6364FF;
+    --md-button__bluesky: #0886FE;
+    --md-button__twitter: #1DA1F2; /*  */
+    --md-button__facebook: #0866FF;
+  
+    /*  */
+    --md-button__mastodon--lighter: #8283FF;
+    --md-button__bluesky--lighter: #399EFE;
+    --md-button__twitter--lighter: #4AB4F5; /*  */
+    --md-button__facebook--lighter: #3985FF;
+  }
+  
+  .md-post .md-button.md-button__social {
+    line-height: 0;
+    padding: .625em;
+    color: white;
+    border-radius: .1rem; /*  */
+  }
+  
+  .md-post .md-button.md-button_social:hover {
+    color: white; /*  */
+  }
+  
+  .md-button.md-button__social--mastodon {
+    background-color: var(--md-button__mastodon);
+    border-color: var(--md-button__mastodon);
+  }
+  
+  .md-button.md-button__social--bluesky {
+    background-color: var(--md-button__bluesky);
+    border-color: var(--md-button__bluesky);
+  }
+  
+  .md-button.md-button__social--twitter {
+    background-color: var(--md-button__twitter);
+    border-color: var(--md-button__twitter);
+  }
+  
+  .md-button.md-button__social--facebook {
+    background-color: var(--md-button__facebook);
+    border-color: var(--md-button__facebook);
+  }
+  
+  .md-button.md-button__social--mastodon:hover {
+    background-color: var(--md-button__mastodon--lighter);
+    border-color: var(--md-button__mastodon--lighter);
+  }
+  
+  .md-button.md-button__social--bluesky:hover {
+    background-color: var(--md-button__bluesky--lighter);
+    border-color: var(--md-button__bluesky--lighter);
+  }
+  
+  .md-button.md-button__social--twitter:hover {
+    background-color: var(--md-button__twitter--lighter);
+    border-color: var(--md-button__twitter--lighter);
+  }
+  
+  .md-button.md-button__social--facebook:hover {
+    background-color: var(--md-button__facebook--lighter);
+    border-color: var(--md-button__facebook--lighter);
+  }
