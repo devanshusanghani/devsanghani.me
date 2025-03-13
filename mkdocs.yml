@@ -62,13 +62,13 @@ watch:
 
 extra:
   social:
-    - icon: 'simple/linkedin'
+    - icon: 'fontawesome/brands/linkedin'
       link: 'https://www.linkedin.com/in/devanshusanghani/'
-    - icon: 'simple/github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/devanshusanghani'
-    - icon: 'simple/mastodon'
+    - icon: 'fontawesome/brands/mastodon'
       link: 'https://hometech.social/@typing'
-    - icon: 'simple/bluesky'
+    - icon: 'fontawesome/brands/bluesky'
       link: 'https://bsky.app/profile/devsanghani.me'
     
   tags:
