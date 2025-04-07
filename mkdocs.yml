@@ -73,6 +73,7 @@ extra:
       link: 'https://bsky.app/profile/devsanghani.me'
     - icon: 'fontawesome/brands/x-twitter'
       link: 'https://x.com/Dev_Sanghani'
+  date_format: "%B %d, %Y"
     
   tags:
     Minecraft: mc
